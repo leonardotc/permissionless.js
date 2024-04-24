@@ -443,6 +443,7 @@ describe("Safe Account", () => {
             args: [hashMessage(messageToSign), signature]
         })
 
+        throw new Error(response)
         expect(response).toBe("0x1626ba7e")
     })
 

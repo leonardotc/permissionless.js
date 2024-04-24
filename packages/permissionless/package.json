@@ -11,13 +11,7 @@
     "type": "module",
     "sideEffects": false,
     "description": "A utility library for working with ERC-4337",
-    "keywords": [
-        "ethereum",
-        "erc-4337",
-        "eip-4337",
-        "paymaster",
-        "bundler"
-    ],
+    "keywords": ["ethereum", "erc-4337", "eip-4337", "paymaster", "bundler"],
     "license": "MIT",
     "exports": {
         ".": {
@@ -83,5 +77,16 @@
     },
     "peerDependencies": {
         "viem": "^2.9.17"
+    },
+    "dependencies": {
+<<<<<<< Updated upstream
+        "@safe-global/protocol-kit": "3.1.0-alpha.0",
+        "@safe-global/relay-kit": "2.1.0-alpha.0",
+        "@safe-global/safe-core-sdk-types": "^4.0.2",
+        "@safe-global/safe-modules-deployments": "^2.0.0",
+        "viem": "^2.9.25"
+=======
+        "viem": "2.9.17"
+>>>>>>> Stashed changes
     }
 }
