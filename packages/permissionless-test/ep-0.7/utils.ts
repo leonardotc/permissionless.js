@@ -41,17 +41,19 @@ export const getFactoryAddress = () => {
 }
 
 export const getPrivateKeyAccount = () => {
-    if (!process.env.TEST_PRIVATE_KEY)
-        throw new Error("TEST_PRIVATE_KEY environment variable not set")
-    return privateKeyToAccount(process.env.TEST_PRIVATE_KEY as Hex)
+    // if (!process.env.TEST_PRIVATE_KEY)
+    //     throw new Error("TEST_PRIVATE_KEY environment variable not set")
+    return privateKeyToAccount(
+        "0x55bb7ba8bee3da5440c59c6a1cadedbeb24849b603b5318d1a3b0253705acac9" as Hex
+    )
 }
 
 export const getPublicClient = () => {
-    if (!process.env.RPC_URL)
-        throw new Error("RPC_URL environment variable not set")
+    // if (!process.env.RPC_URL)
+    //     throw new Error("RPC_URL environment variable not set")
 
     const publicClient = createPublicClient({
-        transport: http(process.env.RPC_URL as string)
+        transport: http("https://rpc.sepolia.org" as string)
     })
 
     return publicClient

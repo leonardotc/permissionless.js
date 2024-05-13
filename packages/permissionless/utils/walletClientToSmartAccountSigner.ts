@@ -39,7 +39,7 @@ export function walletClientToSmartAccountSigner<
                 {
                     account: walletClient.account,
                     ...typedData
-                }
+                } as any
             )
         }
     }
